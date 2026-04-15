@@ -10,44 +10,78 @@
           		<img id="skybox" src="images/skybox.jpg">
 
 				<a-asset-item id="tree" src="models/Lowpoly_tree_sample.obj"></a-asset-item>
+				<a-asset-item id="boxes" src="models/CardboardBoxes_4.obj"></a-asset-item>
+				<a-asset-item id="computer" src="models/computerScreen.obj"></a-asset-item>
+				<a-asset-item id="books" src="models/model.obj"></a-asset-item>
+				<a-asset-item id="chair" src="models/Armchair.obj"></a-asset-item>
+				<a-asset-item id="antenna" src="models/Roof_Antenna.obj"></a-asset-item>
         	</a-assets>
 
 			<!-- Sky -->
 			<a-sky src="#skybox"></a-sky>
 
 			<!-- Models -->
-			<a-obj-model src="#tree" position="-9.081 0 -10" scale=".25 .25 .25" color="green"></a-obj-model>
-			<a-obj-model src="#tree" position="-5 0 -20" scale=".5 .5 .5" material="shader:flat;src:#tex5"></a-obj-model>
-			<a-entity 
-				src="model-sofa"
-				material="color: red"
-				position="0 0 0"
-				rotation="0 0 0"
-				scale="1 1 1">
-			</a-entity>
+<a-obj-model src="#tree" position="-105.56505 10 -35.2994" rotation="74.13214432300155 -179.9998479605043 0" scale="12.84355 2.4011 13.12637" color="green" material="blending: additive">
+			</a-obj-model>
+<a-obj-model src="#tree" position="-2.0298 0 -20" scale="0.5 0.5 0.5" material="shader: flat">
+			</a-obj-model>
+<a-obj-model src="#tree" position="-2.0298 0 -20" scale="0.5 3.52607 0.5" material="flatShading: true; repeat: 0 1; shader: portal; side: double; blending: additive">
+			</a-obj-model>
+<a-obj-model src="#tree" position="63.32251 9.17847 -26.48045" rotation="29.769168161612182 -62.63803799488212 14.410461505335336" scale="31.62253 4.53279 4.53279" color="green" material="blending: additive; color: #000980">
+			</a-obj-model>
+<a-obj-model src="#boxes" position="-9.081 25.05209 -2.80003" scale="-0.04974 -2.39658 0.02" color="crimson" material="blending: additive">
+			</a-obj-model>
+<a-obj-model src="#boxes" position="6.79757 7.65469 -10" scale="0.04662 0.48629 0.04662" rotation="0 0 180" color="crimson" material="blending: additive; color: #a614db">
+			</a-obj-model>
+<a-obj-model src="#boxes" position="9.32713 50.68694 3.64152" scale="-0.04974 -2.39658 0.02" color="crimson" material="blending: additive; color: #00ffee" rotation="10.804838100577065 -123.71705782921326 -2.193855397555922">
+			</a-obj-model>
+<a-obj-model src="#boxes" position="-217.51364 92.40027 81.47127" scale="0.12032 2.66775 0.05459" rotation="0 13.422109308734665 -111.04666914769024" color="crimson" material="blending: additive; color: #14db50">
+			</a-obj-model>
+<a-obj-model src="#boxes" position="-8.78399 34.32686 -2.30221" scale="-0.04974 -8.26192 0.02" color="crimson" material="blending: additive; color: #db149c">
+			</a-obj-model>
+<a-obj-model src="#boxes" position="-74.31176 112.65769 -161.84211" scale="0.12032 2.66775 0.05459" rotation="0 -115.6131427748829 -111.04666914769024" color="crimson" material="blending: additive; color: #1475db">
+			</a-obj-model>
+<a-obj-model src="#books" position="2 1 4" scale="1 1 1" color="darkblue" material="blending: normal">
+			</a-obj-model>
+<a-obj-model src="#computer" position="2.73968 0.8136 3.36532" scale="4 4 4" rotation="82.08250668823686 0 10" color="darkblue">
+			</a-obj-model>
+<a-obj-model src="#antenna" position="-3.54655 -4.08108 2.35645" color="violet">
+			</a-obj-model>
+<a-obj-model src="#chair" position="1 0.25 5" scale="2 2 2" rotation="0 190 0" color="gray" material="blending: normal">
+			</a-obj-model>
+<a-obj-model src="#chair" position="-1 0.25 5" scale="2 2 2" rotation="0 174 0" color="crimson" material="blending: normal">
+			</a-obj-model>
 			
 			<!-- Primitives -->
 			<a-box
-				position="-1 0.5 -3"
+				position="-1 0.5 -8"
 				rotation="0 45 0"
 				color="#4CC3D9">
 			</a-box>
-			<a-sphere
-				position="0 1.25 -5"
-				radius="1.25"
-				color="#EF2D5E">
+			<a-box position="6.74199 0.5 -14.10427" rotation="0 15.831396837259776 0" color="#4CC3D9" material="blending: additive; color: #bad94a" scale="15.76189 6.3179 3.16923">
+			</a-box>
+			<a-box position="6.74199 2.75531 10.34376" rotation="0 2.339959635314282 0" color="#4CC3D9" material="blending: additive; color: #bad94a" scale="41.31648 6.33806 0.93338">
+			</a-box>
+			<a-sphere position="-6.57786 3.51174 -12.28771" radius="1.25" color="#EF2D5E">
 			</a-sphere>
-			<a-cylinder
-				position="1 0.75 -3"
-				radius="0.5"
-				height="1.5"
-				color="#FFC65D">
-			</a-cylinder>
+			<a-sphere position="-4.95201 2.89601 -11.63361" radius="1.25" color="#EF2D5E">
+			</a-sphere>
+			<a-sphere position="-3.5889 2.35168 -10.20275" radius="1.25" color="#EF2D5E">
+			</a-sphere>
+			<a-sphere position="-3.25837 1.68209 -8.64672" radius="1.25" color="#EF2D5E">
+			</a-sphere>
+			<a-sphere position="-3.89873 1.27541 -7.06734" radius="1.25" color="#EF2D5E">
+			</a-sphere>
+			<a-sphere position="-4.67996 1.58743 -6.14941" radius="1.25" color="#EF2D5E" material="color: #000000" scale="0.1 0.1 0.1">
+			</a-sphere>
+			<a-sphere position="-3.84568 1.58743 -5.89947" radius="1.25" color="#EF2D5E" material="color: #000000" scale="0.1 0.1 0.1">
+			</a-sphere>
 			<a-plane
 				position="0 0 -4"
 				rotation="-90 0 0"
-				width="20"
-				height="20"
+				width="1000"
+				height="1000"
+				material="color: #000000; transparent: true; opacity: 0.5; shader: flat"
 				color="#7BC8A4">
 			</a-plane>
 		</a-scene>
